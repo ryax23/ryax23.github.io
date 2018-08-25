@@ -1,0 +1,185 @@
+<html>
+    <head>
+        
+        <style>
+            body {
+                background: lightsalmon;
+                background-image: url(hawaiianflower.jpg);
+                background-size: auto;
+                background-repeat: no-repeat;
+                border: darkgreen 3px solid;
+                overflow: scroll;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            header {
+                background-color: papayawhip;
+                text-align: center;
+                font-size: 40px;
+                color: #de1e70;
+                height: 70px;
+                line-height: 70px;
+                border: darksalmon 2px solid;
+            }
+
+            .kereses {
+                text-align: right;
+                margin-right: 45px;
+                color: papayawhip;
+                font-size: 25px;
+                size: 35px;
+            }
+            
+            .topnav {
+                font-size: 30px;
+                color: papayawhip;
+                text-align: center;
+            
+            }
+            
+            .regisztracio {
+                height: 350px;
+                width: 250px;
+                color: black;
+                background:beige;
+                text-align: center;
+                border:darksalmon 3px solid;
+                display: inline-block;
+            }
+
+            .kezdolap {
+                color: papayawhip;
+            }
+            .magamrol {
+                color: papayawhip;
+            }
+            .irasaim {
+                color: papayawhip;
+            }
+            .galeria {
+                color: papayawhip;
+            }
+            .kapcsolat {
+                color: papayawhip;
+            }
+
+            .blogbejegyzések{
+                background-color: antiquewhite;
+                color: black;
+                align-content: right;
+                border: darksalmon solid 3px;
+                display: inline-block;
+                width: 600px;
+                height:500px;
+                vertical-align: top;
+                margin-left: 100px;
+            }
+
+            #blogcim {
+                width: 600px;
+                text-align: center;
+                block-size: 60px;
+                font-size: 20px;
+            }
+
+            #blogleiras {
+                width: 600px;
+                height: auto;
+                font-size: 20px;
+                height: 300px;
+                text-align: center;
+            }
+
+            .mentes {
+                block-size: 40px;
+                margin-left: 275px;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+
+            <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyA2rlhNwQ5dw0TlyHtNbeQQYIS7601AXwo",
+                authDomain: "greenfoxsummercamp-95c25.firebaseapp.com",
+                databaseURL: "https://greenfoxsummercamp-95c25.firebaseio.com",
+                projectId: "greenfoxsummercamp-95c25",
+                storageBucket: "greenfoxsummercamp-95c25.appspot.com",
+                messagingSenderId: "303583538038"
+              };
+              firebase.initializeApp(config);
+              fb = firebase.database();
+            </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="save.js"></script>
+
+            <script src=“searching.js” lang=“JavaScript”></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <header>
+            <strong>Üdvözöllek az oldalamon!</strong>
+        </header>
+
+        <div class="topnav">
+                <a class="kezdolap" href="file:///Users/viktoriaszabo/Desktop/untitled%20folder/blog/index.html">Kezdőlap</a>
+                <a class="magamrol"href="#magamrol">Magamról</a>
+                <a class="irasaim"href="#irasaim">Írásaim</a>
+                <a class="galeria" href="#galeria">Galéria</a>
+                <a class="kapcsolat" href="#kapcsolat">Kapcsolat</a>
+              </div>
+        <div class="kereses">
+                <input type="text" placeholder="Keresés...">
+                <button class="search"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="regisztracio">
+            <div>
+                <strong>Bejelentkezés</strong>
+                <br>
+                <br>
+                <label for="email">Email cím:</label>
+                <input type="email" placeholder="Írd be az email címed!" name="email" required>
+                <label for="jelszo">Jelszó:</label>
+                <input type="password" placeholder="" name="jelszo" required>
+                <br>
+                <label>
+                <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+                <br>
+                <label>
+                <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az Adatvédelmi szabályzatot.
+                </label>
+                <br>
+                <button type="submit" class="bejelentkezes">Bejelentkezés</button>
+                <br>
+                <br>
+                <label for="regisztracio">Még nem regisztráltál?</label>
+                <br>
+                <button type="submit" class="regisztraciogomb">Regisztráció</button>
+                <br>
+                <br>
+                <label for="elfelejtettjelszo">Elfelejtetted a jelszavadat?</label>
+                <br>
+                <button type="submit" class="elfelejtettjelszo">Új jelszót kérek</button>
+                </div>
+                
+        
+        </div>
+        <div class="blogbejegyzések">
+                <h1><input type="text" placeholder="Blog címe" id="blogcim" required></h1>
+                <div>
+                    <input type="text" placeholder="Blog leírás" id="blogleiras" required>
+                </div>
+                <br>
+                <button type="submit" class="mentes">Mentés</button>
+    </div>
+
+
+
+
+    </body>
+</html>
