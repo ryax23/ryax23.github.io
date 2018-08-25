@@ -16,7 +16,5 @@ document.getElementById("ment").addEventListener("click", function (){
     savedPosts.length++; 
     });
 
-
-    
     
 });
