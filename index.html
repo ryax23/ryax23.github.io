@@ -16,7 +16,7 @@
                 background-color: papayawhip;
                 text-align: center;
                 font-size: 40px;
-                color: #de1e70;
+                color: darksalmon;
                 height: 70px;
                 line-height: 70px;
                 border: darksalmon 2px solid;
@@ -34,7 +34,6 @@
                 font-size: 30px;
                 color: papayawhip;
                 text-align: center;
-            
             }
             
             .regisztracio {
@@ -76,10 +75,13 @@
             }
 
             #blogcim {
-                width: 600px;
+                width: 500px;
                 text-align: center;
                 block-size: 60px;
                 font-size: 20px;
+                display: inline-block;
+                margin-left: 50px;
+                border: lightsalmon solid 3px;
             }
 
             #blogleiras {
@@ -88,19 +90,32 @@
                 font-size: 20px;
                 height: 300px;
                 text-align: center;
+                overflow: scroll;
+                border: lightsalmon solid 3px;
             }
 
             .mentes {
                 block-size: 40px;
                 margin-left: 275px;
             }
-        </style>
 
+            .day {
+                display: inline-block;
+            }
+            
+            .month {
+                display: inline-block;
+            }
+
+            .year {
+                display: inline-block;
+            }
+
+        </style>
     </head>
 
-
     <body>
-
+        
         <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
         <script>
               // Initialize Firebase
@@ -124,12 +139,15 @@
             <strong>Üdvözöllek az oldalamon!</strong>
         </header>
 
+     
+
         <div class="topnav">
                 <a class="kezdolap" href="file:///Users/viktoriaszabo/Desktop/untitled%20folder/blog/index.html">Kezdőlap</a>
-                <a class="magamrol"href="#magamrol">Magamról</a>
+                <a class="magamrol"href="https://port.hu/adatlap/film/tv/bombano-10/movie-258">Magamról</a>
                 <a class="irasaim"href="#irasaim">Írásaim</a>
                 <a class="galeria" href="#galeria">Galéria</a>
                 <a class="kapcsolat" href="#kapcsolat">Kapcsolat</a>
+                
         </div>
 
         <div class="kereses">
@@ -139,13 +157,14 @@
 
         <div class="regisztracio">
             <div>
+                <br>
                 <strong>Bejelentkezés</strong>
                 <br>
                 <br>
                 <label for="email">Email cím:</label>
-                <input type="email" placeholder="Írd be az email címed!" name="email" required>
+                <input type="email" placeholder="Írd be az email címed!" name="email" required id="emailcim">
                 <label for="jelszo">Jelszó:</label>
-                <input type="password" placeholder="" name="jelszo" required>
+                <input type="password" placeholder="" name="jelszo" required id="jelszo">
                 <br>
                 <label>
                 <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
@@ -155,31 +174,38 @@
                 <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az Adatvédelmi szabályzatot.
                 </label>
                 <br>
-                <button type="submit" class="bejelentkezes">Bejelentkezés</button>
+                <button type="submit" class="bejelentkezes" id="bejelentkezes">Bejelentkezés</button>
                 <br>
                 <br>
                 <label for="regisztracio">Még nem regisztráltál?</label>
                 <br>
-                <button type="submit" class="regisztraciogomb">Regisztráció</button>
+                <button type="submit" class="regisztraciogomb" id="registration">Regisztráció</button>
                 <br>
                 <br>
                 <label for="elfelejtettjelszo">Elfelejtetted a jelszavadat?</label>
                 <br>
-                <button type="submit" class="elfelejtettjelszo">Új jelszót kérek</button>
+                <button type="submit" class="elfelejtettjelszo" id="forgetpw">Új jelszót kérek</button>
                 </div>
                 
         
         </div>
         <div class="blogbejegyzések">
+                
                 <h1><input type="text" placeholder="Blog címe" id="blogcim" required></h1>
                 <div>
                     <input type="text" placeholder="Blog leírás" id="blogleiras" required>
                 </div>
                 <br>
                 <button type="button" class="mentes" id="ment">Mentés</button>
-    </div>
+           
+         </div>
 
-
+         <div class="date">
+                <p class="day" id="day" style="color:papayawhip">Day</p>
+                <p class="month" id="month" style="color:papayawhip">Month</p>
+                <p class="year" id="year" style="color:papayawhip">Year</p>
+            </div>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js" lang="JavaScript"></script>
 
