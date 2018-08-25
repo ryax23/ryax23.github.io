@@ -2,10 +2,12 @@ let valtozo = 0;
 document.getElementById("ment").addEventListener("click", function (){ 
     let title = document.getElementById("blogcim").value;
     let text = document.getElementById("blogleiras").value;
+    let date = document.getElementById("maidatum").value;
     
     let dataToSave = {
         title: title,
-        text: text
+        text: text,
+        date: date
     };
      
     fb.ref("posztok").once('value').then(data => {
