@@ -15,5 +15,8 @@ document.getElementById("ment").addEventListener("click", function (){
     fb.ref(path).set(dataToSave);
     savedPosts.length++; 
     });
+
+
+    
     
 });
