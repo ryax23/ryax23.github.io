@@ -101,8 +101,8 @@
 
     <body>
 
-            <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
-            <script>
+        <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+        <script>
               // Initialize Firebase
               var config = {
                 apiKey: "AIzaSyA2rlhNwQ5dw0TlyHtNbeQQYIS7601AXwo",
@@ -114,13 +114,12 @@
               };
               firebase.initializeApp(config);
               fb = firebase.database();
-            </script>
+        </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="save.js"></script>
+        
 
-            <script src=“searching.js” lang=“JavaScript”></script>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <header>
             <strong>Üdvözöllek az oldalamon!</strong>
         </header>
@@ -131,11 +130,13 @@
                 <a class="irasaim"href="#irasaim">Írásaim</a>
                 <a class="galeria" href="#galeria">Galéria</a>
                 <a class="kapcsolat" href="#kapcsolat">Kapcsolat</a>
-              </div>
+        </div>
+
         <div class="kereses">
                 <input type="text" placeholder="Keresés...">
                 <button class="search"><i class="fa fa-search"></i></button>
         </div>
+
         <div class="regisztracio">
             <div>
                 <strong>Bejelentkezés</strong>
@@ -175,11 +176,12 @@
                     <input type="text" placeholder="Blog leírás" id="blogleiras" required>
                 </div>
                 <br>
-                <button type="submit" class="mentes">Mentés</button>
+                <button type="button" class="mentes" id="ment">Mentés</button>
     </div>
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js" lang="JavaScript"></script>
 
     </body>
 </html>
