@@ -9,15 +9,25 @@ document.getElementById("ment").addEventListener("click", function (){
         text: text,
         date: date
     };
-     
+    
     fb.ref("posztok").once('value').then(data => {
         
     let savedPosts = data.val();
     let path="posztok/"+savedPosts.length;
     fb.ref(path).set(dataToSave);
     savedPosts.length++; 
+
+  
+      });
+    
     });
 
+
+fb.ref("posztok").once('value').then(data => {
+    let savedPosts = data.val();
+    savedPosts.forEach((savepost) => {
+        $("article").append("<h4>"+savepost.title+"</h4><p>"+savepost.text+"</p><p1>"+savepost.date+"</p1>")
+    }); 
 });
 
 document.getElementById("registration").addEventListener("click", function (){ 
@@ -45,10 +55,7 @@ document.getElementById("forgetpw").addEventListener("click", function (){
         fb.ref(path).set(dataToSave);
         savedPosts.length++; 
         });
-    
+        
     });
 
-    let d = new Date();
-    document.getElementById("day").innerHTML = d.getDate();
-    document.getElementById("month").innerHTML = d.getMonth();
-    document.getElementById("year").innerHTML = d.getFullYear();
+   
