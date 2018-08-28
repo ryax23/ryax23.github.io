@@ -22,7 +22,6 @@ document.getElementById("ment").addEventListener("click", function (){
     
     });
 
-
     fb.ref("posztok").once('value').then(data => {
     let savedPosts = data.val();
     savedPosts.forEach((savepost) => {
