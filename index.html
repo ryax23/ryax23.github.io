@@ -1,161 +1,7 @@
 <html>
-    <head>
-        
-        <style>
-            body {
-                /*background: lightsalmon;
-                background-image: url(hawaiianflower.jpg);*/
-                background-size: auto;
-                overflow: scroll;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-            
-            #background {
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                left: 0px;
-                top: 0px;
-                z-index: -1;
-            }
-
-            .strech {
-                width: 100%;
-                height: 100%;
-            }
-
-            header {
-                background-color: papayawhip;
-                text-align: center;
-                font-size: 40px;
-                color: darksalmon;
-                height: 70px;
-                line-height: 70px;
-                border: darksalmon 2px solid;
-            }
-
-            .kereses {
-                text-align: right;
-                margin-right: 45px;
-                color: papayawhip;
-                font-size: 25px;
-                size: 35px;
-            }
-            
-            .topnav {
-                font-size: 30px;
-                color: papayawhip;
-                text-align: center;
-            }
-            
-            .regisztracio {
-                height: 400px;
-                width: 280px;
-                color: black;
-                background:beige;
-                text-align: center;
-                border:darksalmon 3px solid;
-                display: inline-block;
-            }
-
-            .kezdolap {
-                color: papayawhip;
-            }
-            .magamrol {
-                color: papayawhip;
-            }
-            .irasaim {
-                color: papayawhip;
-            }
-            .galeria {
-                color: papayawhip;
-            }
-            .kapcsolat {
-                color: papayawhip;
-            }
-
-            .blogbejegyzések{
-                background-color: antiquewhite;
-                color: black;
-                align-content: right;
-                border: darksalmon solid 3px;
-                display: inline-block;
-                width: 600px;
-                height:460px;
-                vertical-align: top;
-                margin-left: 100px;
-            }
-
-            #blogcim {
-                width: 500px;
-                text-align: center;
-                block-size: 50px;
-                font-size: 20px;
-                display: inline-block;
-                margin-left: 50px;
-                border: lightsalmon solid 3px;
-            }
-
-            #blogleiras {
-                width: 600px;
-                height: auto;
-                font-size: 20px;
-                height: 250px;
-                text-align: center;
-                overflow: scroll;
-                border: lightsalmon solid 3px;
-            }
-
-            #maidatum {
-                width: 300px;
-                text-align: center;
-                margin-left: 150px;
-                border: solid 2px darksalmon;
-                font-size: 15px;
-            }
-
-            .mentes {
-                block-size: 40px;
-                margin-left: 275px;
-            }
-
-
-            h3 {
-             color: papayawhip;
-            }
-
-            article {
-                color: papayawhip;
-                font-size: 20px;
-                border: solid 2px darksalmon;
-                background-color: blanchedalmond;
-            }
-            h4 {
-                color: darksalmon;
-            }
-
-            p {
-                color: black;
-            }
-
-            p1 {
-                color: darkgrey;
-            }
-
-            hr { 
-                display: block;
-                margin-top: 0.5em;
-                margin-bottom: 0.5em;
-                margin-left: auto;
-                margin-right: auto;
-                border-style: inset;
-                border-width: 1px;
-            } 
-
-        </style>
-    </head>
-
-    <body>
+  
+    <body id="body">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <div id="background">
             <img src="hawaiianflower.jpg" class="strech" alt="" />
         </div>
@@ -225,20 +71,21 @@
                 <br>
                 <label for="regisztracio">Még nem regisztráltál?</label>
                 <br>
-                <button type="submit" class="regisztraciogomb" id="registration">Regisztráció</button>
+                <button type="submit" class="regisztraciogomb" id="registration" value="Open Window" onclick="regiszt()">Regisztráció</button>
                 <br>
                 <br>
                 <label for="elfelejtettjelszo">Elfelejtetted a jelszavadat?</label>
                 <br>
                 <button type="submit" class="elfelejtettjelszo" id="forgetpw">Új jelszót kérek</button>
                 </div>
-                
+        
+      
         
         </div>
         <div class="blogbejegyzések">
                 
                 <h1><input type="text" placeholder="Blog címe" id="blogcim" required></h1>
-                <h2><input type="text" placeholder="Dátum" id="maidatum" required></h2>
+                <h2><input type="date" placeholder="Dátum" id="maidatum" required></h2>
                 <div>
                     <input type="text" placeholder="Blog leírás" id="blogleiras" required>
                 </div>
@@ -246,12 +93,19 @@
                 <button type="button" class="mentes" id="ment">Mentés</button>
         
                 <br>
+                <br>
+        </div>
+                <div class="egyeb">
+                    Egyéb
+                </div>
 
-        <h3>Mentett bejegyzések</h3>
+                <br>
+                <br>
+        <h3 id="mentettbejegyzesek">Mentett bejegyzések
         <article>
         </article>
-
-    
+    </h3>
+       
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js" lang="JavaScript"></script>

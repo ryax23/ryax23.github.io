@@ -1,0 +1,87 @@
+<html>
+   <head>
+       <style>
+                body {
+            /*background: lightsalmon;
+            background-image: url(hawaiianflower.jpg);*/
+            background-size: auto;
+            overflow: scroll;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #background {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+
+        .strech {
+            width: 100%;
+            height: 100%;
+        }
+
+        .regisztracio {
+        height: auto;
+        width: 500px;
+        color: black;
+        background:beige;
+        text-align: center;
+        border:darksalmon 3px solid;
+        display: inline-block;
+        margin-left: 450px;
+
+}
+       </style>
+   </head>
+
+<body>
+        <div id="background">
+                <img src="hawaiianflower.jpg" class="strech" alt="" />
+            </div>
+
+            <div class="regisztracio">
+                    <div>
+                        <br>
+                        <strong>Regisztrációs űrlap</strong>
+                        <br>
+                        <br>
+                        <label for="név">Név</label>
+                        <input type="text" placeholder="Írd be a teljes neved!">
+                        <br>
+                        <label for="email">Email cím:</label>
+                        <input type="email" placeholder="Írd be az email címed!" name="email" required id="emailcim">
+                        <br>
+                        <label for="jelszo">Jelszó:</label>
+                        <input type="password" placeholder="" name="jelszo" required id="jelszo">
+                        <br>
+                        <label for="jelszo">Jelszó újra:</label>
+                        <input type="password" placeholder="" name="jelszo" required id="jelszo">
+                        <br>
+                        <br>
+                        <label>
+                        <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                        <br>
+                        <label>
+                        <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az Adatvédelmi szabályzatot.
+                        </label>
+                        <br>
+                        <button type="submit" class="bejelentkezes" id="bejelentkezes">Bejelentkezés</button>
+                        <br>
+                        <br>
+                        <label for="regisztracio">Még nem regisztráltál?</label>
+                        <br>
+                        <button type="submit" class="regisztraciogomb" id="registration" value="Open Window" onclick="regiszt()">Regisztráció</button>
+                        <br>
+                        <br>
+                        <label for="elfelejtettjelszo">Elfelejtetted a jelszavadat?</label>
+                        <br>
+                        <button type="submit" class="elfelejtettjelszo" id="forgetpw">Új jelszót kérek</button>
+                        </div>
+                        <br>
+                
+</body>
+</html>

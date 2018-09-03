@@ -29,9 +29,9 @@ document.getElementById("ment").addEventListener("click", function (){
     }); 
 });
 
-document.getElementById("registration").addEventListener("click", function (){ 
-    alert("Itt majd lesz egy regisztrációs űrlap. :)")
-     });
+//document.getElementById("registration").addEventListener("click", function (){ 
+    //alert("Itt majd lesz egy regisztrációs űrlap. :)")
+     //});
 
 document.getElementById("forgetpw").addEventListener("click", function (){ 
    alert("Ez a funkció még nem működik egyelőre. :D")
@@ -56,5 +56,10 @@ document.getElementById("forgetpw").addEventListener("click", function (){
         });
         
     });
+
+
+    function regiszt() {
+        window.open("form.html");
+    }
 
    
