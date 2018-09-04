@@ -4,7 +4,6 @@
     background-size: auto;
     overflow: scroll;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 .container {
@@ -36,7 +35,7 @@
 header {
     background-color: papayawhip;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     color: darksalmon;
     height: 70px;
     line-height: 70px;
@@ -47,17 +46,15 @@ header {
     text-align: right;
     margin-right: 45px;
     color: papayawhip;
-    font-size: 25px;
-    size: 35px;
+    font-size: 15px;
+    size: 20px;
 }
 
 .topnav {
-    font-size: 30px;
+    font-size: 25px;
     color: papayawhip;
     text-align: center;
 }
-
-
 
 .kezdolap {
     color: papayawhip;
@@ -72,41 +69,30 @@ header {
     color: papayawhip;
 }
 
-
-
-
-
 #blogcim {
-
     text-align: center;
-    block-size: 50px;
     font-size: 20px;
     display: inline-block;
-
     border: lightsalmon solid 3px;
 }
 
 #blogleiras {
-
     height: auto;
     font-size: 20px;
-    height: 250px;
+    min-height: 250px;
     text-align: center;
     overflow: scroll;
     border: lightsalmon solid 3px;
 }
 
 #maidatum {
-   
     text-align: center;
-
     border: solid 2px darksalmon;
     font-size: 15px;
 }
 
 .mentes {
     block-size: 40px;
-
 }
 
 
@@ -120,6 +106,7 @@ article {
     border: solid 2px darksalmon;
     background-color: blanchedalmond;
 }
+
 h4 {
     color: darksalmon;
 }
