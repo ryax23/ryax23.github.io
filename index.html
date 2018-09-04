@@ -28,18 +28,44 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <header>
-            <strong>Üdvözöllek az oldalamon!</strong>
+        <header class="header-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="fejlec">
+                            <strong>Üdvözöllek az oldalamon!</strong>
+                        </div>
+                    </div>
+                </div>
         </header>
 
+        <nav class="navbar navbar-expand-lg" id="navigacio">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="https://ryax23.github.io/" style="color:beige">Kezdőlap<span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://port.hu/adatlap/film/tv/bombano-10/movie-258" style="color:beige">Magamról</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:beige">
+                      Galéria
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Képek</a>
+                      <a class="dropdown-item" href="#">Videók</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enabled" href="#" style="color:beige">Kapcsolat</a>
+                  </li>
+                </ul>
+</div>
+</nav>
 
-        <div class="topnav">
-                <a href="https://ryax23.github.io/" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Kezdőlap</a>
-                <a href="https://port.hu/adatlap/film/tv/bombano-10/movie-258" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Magamról</a>
-                <a href="#" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Galéria</a>
-                <a href="#" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Kapcsolat</a>
-                
-        </div>
+
 
         <div class="kereses">
                 <input type="text" placeholder="...">
@@ -81,7 +107,7 @@
                     <div class="col-6">
                         <div class="grid">
                             <h1><input type="text" placeholder="Blog címe" id="blogcim" required></h1>
-                            <h2><input type="date" placeholder="Dátum" id="maidatum" required></h2>
+                            <h2><input type="date" placeholder="Dátum" id="maidatum" required onload="GetDateTime()"></h2>
                             <div>
                                 <input type="text" placeholder="Blog leírás" id="blogleiras" required>
                             </div>
@@ -103,11 +129,19 @@
                 <br>
                 <br>
 
+            
 
-        <h3 id="mentettbejegyzesek">Mentett bejegyzések
-        <article>
-        </article>
-    </h3>
+            <div class="bejegyzesek">
+                <h3 id="mentettbejegyzesek">Mentett bejegyzések</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="osszes">
+                                <article>
+                                </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
        
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

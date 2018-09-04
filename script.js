@@ -1,9 +1,13 @@
+function GetDateTime(){
+    let param1 = new Date();
+    document.getElementById('maidatum').value = param1;
+}
 let valtozo = 0;
 function ment(){ 
     let title = document.getElementById("blogcim").value;
     let text = document.getElementById("blogleiras").value;
     let date = document.getElementById("maidatum").value;
-    
+   
     let dataToSave = {
         title: title,
         text: text,
@@ -64,4 +68,6 @@ document.getElementById("forgetpw").addEventListener("click", function (){
         window.open("form.html");
     }
 
+  
+    
    

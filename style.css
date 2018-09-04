@@ -6,6 +6,21 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.header-container {
+    width: 100%;
+}
+
+.fejlec {
+    min-height: 50px;
+    margin: 3px;
+    background-color: beige;
+    text-align: center;
+    border: lightsalmon 2px solid;
+    color: darksalmon;
+    font-size: 35px;
+    line-height: 60px;
+}
+
 .container {
     width: 100%;
 }
@@ -17,6 +32,26 @@
     text-align: center;
     border: lightsalmon 2px solid;
 }
+
+.bejegyzesek {
+    width: 100%;
+}
+
+.osszes {
+    min-height: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: beige;
+    text-align: center;
+    border: lightsalmon 2px solid;
+}
+
+
+h3 {
+    color: papayawhip;
+    text-align: center;
+   }
+   
 
 #background {
     width: 100%;
@@ -32,16 +67,6 @@
     height: 100%;
 }
 
-header {
-    background-color: papayawhip;
-    text-align: center;
-    font-size: 35px;
-    color: darksalmon;
-    height: 70px;
-    line-height: 70px;
-    border: darksalmon 2px solid;
-}
-
 .kereses {
     text-align: right;
     margin-right: 45px;
@@ -50,24 +75,14 @@ header {
     size: 20px;
 }
 
-.topnav {
-    font-size: 25px;
+#navigacio {
+    width: 100%;
+    font-size: 20px;
     color: papayawhip;
     text-align: center;
+    margin: 3px;
 }
 
-.kezdolap {
-    color: papayawhip;
-}
-.magamrol {
-    color: papayawhip;
-}
-.galeria {
-    color: papayawhip;
-}
-.kapcsolat {
-    color: papayawhip;
-}
 
 #blogcim {
     text-align: center;
@@ -96,16 +111,6 @@ header {
 }
 
 
-h3 {
- color: papayawhip;
-}
-
-article {
-    color: papayawhip;
-    font-size: 20px;
-    border: solid 2px darksalmon;
-    background-color: blanchedalmond;
-}
 
 h4 {
     color: darksalmon;
