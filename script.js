@@ -1,5 +1,5 @@
 let valtozo = 0;
-document.getElementById("ment").addEventListener("click", function (){ 
+function ment(){ 
     let title = document.getElementById("blogcim").value;
     let text = document.getElementById("blogleiras").value;
     let date = document.getElementById("maidatum").value;
@@ -20,7 +20,7 @@ document.getElementById("ment").addEventListener("click", function (){
   
       });
     
-    });
+    };
 
     fb.ref("posztok").once('value').then(data => {
     let savedPosts = data.val();
@@ -38,7 +38,9 @@ document.getElementById("forgetpw").addEventListener("click", function (){
     });
 
 
-    document.getElementById("bejelentkezes").addEventListener("click", function (){ 
+    //document.getElementById("btn btn-success").addEventListener("click", function (){ 
+        function bejelentkezes(){
+            alert("működik");
         let email = document.getElementById("emailcim").value;
         let password = document.getElementById("jelszo").value;
         
@@ -46,7 +48,7 @@ document.getElementById("forgetpw").addEventListener("click", function (){
             email_cim: email,
             jelszo: password
         };
-         
+    
         fb.ref("bejelentkezes").once('value').then(data => {
             
         let savedPosts = data.val();
@@ -55,7 +57,7 @@ document.getElementById("forgetpw").addEventListener("click", function (){
         savedPosts.length++; 
         });
         
-    });
+    }
 
 
     function regiszt() {

@@ -1,5 +1,10 @@
 <html>
-  
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
     <body id="body">
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <div id="background">
@@ -29,10 +34,10 @@
 
 
         <div class="topnav">
-                <a class="kezdolap" href="https://ryax23.github.io/">Kezdőlap</a>
-                <a class="magamrol"href="https://port.hu/adatlap/film/tv/bombano-10/movie-258">Magamról</a>
-                <a class="galeria" href="#galeria">Galéria</a>
-                <a class="kapcsolat" href="#kapcsolat">Kapcsolat</a>
+                <a href="https://ryax23.github.io/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Kezdőlap</a>
+                <a href="https://port.hu/adatlap/film/tv/bombano-10/movie-258" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Magamról</a>
+                <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Galéria</a>
+                <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Kapcsolat</a>
                 
         </div>
 
@@ -41,61 +46,64 @@
                 <button class="search"><i class="fa fa-search"></i></button>
         </div>
 
-        <div class="regisztracio">
-            
-                <br>
-                <strong>Bejelentkezés</strong>
-                <br>
-                <br>
-                <label for="email">Email cím:</label>
-                <input type="email" placeholder="Írd be az email címed!" name="email" required id="emailcim">
-                <br>
-                <label for="jelszo">Jelszó:</label>
-                <input type="password" placeholder="" name="jelszo" required id="jelszo">
-                <br>
-                <label>
-                <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
-                <br>
-                <label>
-                <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az Adatvédelmi szabályzatot.
-                </label>
-                <br>
-                <button type="submit" class="bejelentkezes" id="bejelentkezes">Bejelentkezés</button>
-                <br>
-                <br>
-                <label for="regisztracio">Még nem regisztráltál?</label>
-                <br>
-                <button type="submit" class="regisztraciogomb" id="registration" value="Open Window" onclick="regiszt()">Regisztráció</button>
-                <br>
-                <br>
-                <label for="elfelejtettjelszo">Elfelejtetted a jelszavadat?</label>
-                <br>
-                <button type="submit" class="elfelejtettjelszo" id="forgetpw">Új jelszót kérek</button>
-                </div>
-        
-      
-        
-        </div>
-        <div class="blogbejegyzések">
-                
-                <h1><input type="text" placeholder="Blog címe" id="blogcim" required></h1>
-                <h2><input type="date" placeholder="Dátum" id="maidatum" required></h2>
-                <div>
-                    <input type="text" placeholder="Blog leírás" id="blogleiras" required>
-                </div>
-                <br>
-                <button type="button" class="mentes" id="ment">Mentés</button>
-        
-                <br>
-                <br>
-        </div>
-                <div class="egyeb">
-                    Egyéb
-                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="grid">
+                            <strong>Bejelentkezés</strong>
+                            <br>
+                            <label for="email">Email cím:</label>
+                            <input type="email" placeholder="Írd be az email címed!" name="email" required id="emailcim">
+                            <br>
+                            <label for="jelszo">Jelszó:</label>
+                            <input type="password" placeholder="" name="jelszo" required id="jelszo">
+                            <br>
+                            <label>
+                            <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
+                            </label>
+                            <br>
+                            <label>
+                            <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az Adatvédelmi szabályzatot.
+                            </label>
+                            <br>
+                            <button type="button" class="btn btn-primary" id="bejelentkezes" onclick="bejelentkezes()">Bejelentkezés</button>
+                            <br>
+                            <label for="regisztracio">Még nem regisztráltál?</label>
+                            <br>
+                            <button type="button" class="btn btn-outline-primary" id="registration" value="Open Window" onclick="regiszt()">Regisztráció</button>
+                            <br>
+                            <label for="elfelejtettjelszo">Elfelejtetted a jelszavadat?</label>
+                            <br>
+                            <button type="submit" class="btn btn-outline-primary" id="forgetpw">Új jelszót kérek</button>
+                        </div>
+                    </div>
 
+                    <div class="col-6">
+                        <div class="grid">
+                            <h1><input type="text" placeholder="Blog címe" id="blogcim" required></h1>
+                            <h2><input type="date" placeholder="Dátum" id="maidatum" required></h2>
+                            <div>
+                                <input type="text" placeholder="Blog leírás" id="blogleiras" required>
+                            </div>
+                            <br>
+                            <button type="button" class="mentes" id="ment" onclick="ment()">Mentés</button>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="grid">
+                            Egyéb
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
                 <br>
                 <br>
+
+
         <h3 id="mentettbejegyzesek">Mentett bejegyzések
         <article>
         </article>
@@ -105,5 +113,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js" lang="JavaScript"></script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>

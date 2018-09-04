@@ -4,6 +4,19 @@
     background-size: auto;
     overflow: scroll;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+    width: 100%;
+}
+
+.grid {
+    min-height: 300px;
+    margin: 3px;
+    background-color: beige;
+    text-align: center;
+    border: lightsalmon 2px solid;
 }
 
 #background {
@@ -44,16 +57,7 @@ header {
     text-align: center;
 }
 
-.regisztracio {
-    height: 400px;
-    width: 280px;
-    color: black;
-    background:beige;
-    text-align: center;
-    border:darksalmon 3px solid;
-    display: inline-block;
 
-}
 
 .kezdolap {
     color: papayawhip;
@@ -69,44 +73,21 @@ header {
 }
 
 
-.blogbejegyzések{
-    background-color: antiquewhite;
-    color: black;
-    align-content: right;
-    border: darksalmon solid 3px;
-    display: inline-block;
-    width: 600px;
-    height:460px;
-    vertical-align: top;
-    margin-left: 100px;
-    
-}
 
-.egyeb {
-    background-color: antiquewhite;
-    color: black;
-    align-content: right;
-    border: darksalmon solid 3px;
-    display: inline-block;
-    width: 350px;
-    height:460px;
-    vertical-align: top;
-    margin-left: 100px;
-   
-}
+
 
 #blogcim {
-    width: 500px;
+
     text-align: center;
     block-size: 50px;
     font-size: 20px;
     display: inline-block;
-    margin-left: 50px;
+
     border: lightsalmon solid 3px;
 }
 
 #blogleiras {
-    width: 600px;
+
     height: auto;
     font-size: 20px;
     height: 250px;
@@ -116,16 +97,16 @@ header {
 }
 
 #maidatum {
-    width: 300px;
+   
     text-align: center;
-    margin-left: 150px;
+
     border: solid 2px darksalmon;
     font-size: 15px;
 }
 
 .mentes {
     block-size: 40px;
-    margin-left: 275px;
+
 }
 
 
