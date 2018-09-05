@@ -21,7 +21,7 @@
     line-height: 60px;
 }
 
-.container {
+.container-fluid {
     width: 100%;
 }
 
@@ -31,6 +31,10 @@
     background-color: beige;
     text-align: center;
     border: lightsalmon 2px solid;
+}
+
+.input {
+    width: auto;
 }
 
 .bejegyzesek {
@@ -87,12 +91,10 @@ h3 {
 #blogcim {
     text-align: center;
     font-size: 20px;
-    display: inline-block;
     border: lightsalmon solid 3px;
 }
 
 #blogleiras {
-    height: auto;
     font-size: 20px;
     min-height: 250px;
     text-align: center;

@@ -70,7 +70,7 @@
                     </h5>
                     <span class="text-muted">
                             <nav class="navbar navbar-expand-lg" id="navigacio">
-                                    <a class="navbar-brand" href="#" style="color:beige">Menü</a>
+                                    <a class="navbar-brand" href="#" style="color:beige"></a>
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                       <span class="navbar-toggler-icon"></span>
                                     </button>
@@ -92,28 +92,32 @@
                 <button class="btn btn-outline-success my-2 my-sm-0 btn-sm" type="submit">Keresés</button>
         </div>
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col">
                         <div class="grid">
                             <strong>Bejelentkezés</strong>
                             <br>
-                            <label for="email">Email cím:</label>
-                            <input type="email" placeholder="Írd be az email címed!" name="email" required id="emailcim">
-                            <br>
-                            <label for="jelszo">Jelszó:</label>
-                            <input type="password" placeholder="" name="jelszo" required id="jelszo">
-                            <br>
-                            <label>
-                            <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
+                            <div class="form-group">
+                            <label for="exampleInputEmail1">Email cím:</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Írd be az email címed!" name="email" required id="exampleInputEmail1">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputPassword1">Jelszó:</label>
+                            <input type="password" class="form-control" placeholder="Jelszó" name="jelszo" required id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group form-check"> 
+                            <label>   
+                            <input type="checkbox" class="form-check-input" aria-checked="false" name="remember" style="margin-bottom:15px" id="exampleCheck1"> Remember me
                             </label>
-                            <br>
+                            </div>
+                            <div class="form-group form-check">
                             <label>
-                            <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az Adatvédelmi szabályzatot.
+                            <input type="checkbox" class="form-check-input" aria-checked="false" name="gdpr" style="margin-bottom:15px" id="exampleCheck2"> Elfogadom az Adatvédelmi szabályzatot.
                             </label>
-                            <br>
                             <button type="button" class="btn btn-primary btn-sm" id="bejelentkezes" onclick="bejelentkezes()">Bejelentkezés</button>
-                            <br>
+                            </div>
+                            <div class="form-group">
                             <label for="regisztracio">Még nem regisztráltál?</label>
                             <br>
                             <button type="button" class="btn btn-outline-primary btn-sm" id="registration" value="Open Window" onclick="regiszt()">Regisztráció</button>
@@ -122,19 +126,23 @@
                             <br>
                             <button type="submit" class="btn btn-outline-primary btn-sm" id="forgetpw">Új jelszót kérek</button>
                         </div>
+                        </div>
                     </div>
 
                     <div class="col-6">
                         <div class="grid">
-                            <h1><input type="text" placeholder="Blog címe" id="blogcim" required></h1>
-                            <h2><input type="date" placeholder="Dátum" id="maidatum" required onload="GetDateTime()"></h2>
-                            <div>
-                                <input type="text" placeholder="Blog leírás" id="blogleiras" required>
-                            </div>
+                           
                             <br>
-                            <button type="button" class="btn btn-primary btn-sm" id="ment" onclick="ment()">Mentés</button>
+                            <div class="form-group"><input type="text" class="form-control" placeholder="Blog címe" id="blogcim" required></div>
+                            <br>
+                            <div class="form-group"><input type="date" class="form-control" placeholder="Dátum" id="maidatum" required onload="GetDateTime()"></div>
+                            <br>
+                            <div class="form-group"><input type="text" class="form-control" placeholder="Blog leírás" id="blogleiras" required></div>
+                            <br>
+                            <div class="form-group"><button type="button" class="btn btn-primary btn-sm" id="ment" onclick="ment()">Mentés</button></div>
                             <br>
                             <br>
+                            
                         </div>
                     </div>
 
@@ -155,7 +163,7 @@
                 <h3 id="mentettbejegyzesek">Mentett bejegyzések</h3>
                 <div class="row">
                     <div class="col">
-                        <div class="osszes">
+                        <div class="form-group" style="background-color: beige; text-align: center">
                                 <article>
                                 </article>
                         </div>
