@@ -33,8 +33,6 @@
     border: lightsalmon 2px solid;
 }
 
-
-
 .bejegyzesek {
     width: 100%;
 }
@@ -44,6 +42,7 @@
     background-color:sandybrown;
     text-align: center;
     border: lightsalmon 2px solid;
+    margin:3px;
 }
 
 
