@@ -16,7 +16,7 @@
     background-color: beige;
     text-align: center;
     border: lightsalmon 2px solid;
-    color: darksalmon;
+    color: sandybrown;
     font-size: 35px;
     line-height: 60px;
 }
@@ -28,7 +28,7 @@
 .grid {
     min-height: 50px;
     margin: 3px;
-    background-color: beige;
+    background-color:sandybrown;
     text-align: center;
     border: lightsalmon 2px solid;
 }
@@ -41,14 +41,14 @@
 
 #osszes {
     min-height: 300px;
-    background-color: beige;
+    background-color:sandybrown;
     text-align: center;
     border: lightsalmon 2px solid;
 }
 
 
 h3 {
-    color: papayawhip;
+    color:saddlebrown;
     text-align: center;
    }
    
@@ -111,7 +111,7 @@ h3 {
 
 
 h4 {
-    color: darksalmon;
+    color: saddlebrown;
 }
 
 p {
@@ -119,7 +119,7 @@ p {
 }
 
 p1 {
-    color: darkgrey;
+    color:brown;
 }
 
 hr { 
