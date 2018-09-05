@@ -33,18 +33,14 @@
     border: lightsalmon 2px solid;
 }
 
-.input {
-    width: auto;
-}
+
 
 .bejegyzesek {
     width: 100%;
 }
 
-.osszes {
+#osszes {
     min-height: 300px;
-    margin-left: 200px;
-    margin-right: 200px;
     background-color: beige;
     text-align: center;
     border: lightsalmon 2px solid;
